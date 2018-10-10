@@ -1,0 +1,204 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+body {
+    background-color: white;
+}
+
+header {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+       position: fixed;
+    background-color: white;
+    width: 100%;
+}
+
+header img{width: 100%;}
+
+nav {
+    width: 100%;
+    background-color: white;
+    margin-top: 30px;
+ 
+}
+
+nav > ul {
+    margin: 0 auto;
+    list-style-type: none;
+   
+    /*Display: flex incoming*/
+    display: flex;
+    justify-content: center;
+
+}
+
+nav > ul > li > a {
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    background-color: white;
+    text-transform: uppercase;
+    color: black;
+    width: 150px;/*skal fikses til mindre skærme*/
+    margin: 0 5px;
+
+}
+
+nav > ul > li > a:hover {
+    background-color: dimgray;
+    transition: 2s;
+    color: white;
+ line-height: 55px;
+}
+
+
+.dropdown {
+    position: absolute;
+    width: 150px;
+    height: 0;
+    background-color: dimgray;
+    /*top: 100%;*/
+    margin: 0 5px;
+    overflow: hidden;
+    list-style-type: none;
+
+}
+
+ul > li:hover .dropdown {
+    height: auto;
+}
+
+.dropdown a {
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: dimgray;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+.dropdown a:hover {
+    background-color: white;
+    transition: .5s;
+    color: black;
+    cursor: pointer;
+}
+
+
+.billede {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.5)), url("../Img/anete-lusina-382329-unsplash.jpg") center no-repeat fixed;
+    background-size: 100% 100%;
+
+}
+
+
+
+h1#sefy {
+    padding: 20px 50px;
+    background-color: rgba(255, 255, 255, 0.4);
+    font-family: sans-serif;
+    font-size: 80px;
+    color: white;
+
+}
+
+.appetizers {
+    padding: 60px 0;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*appetizers*/
+
+.indretning {
+
+    width: 30%;
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: 10px;
+
+}
+
+.lektier {
+    width: 30%;
+    padding: 10px;
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+
+
+}
+
+.musik {
+    width: 30%;
+    padding: 10px;
+    display: block;
+    margin-left: 10px;
+    margin-right: auto;
+
+}
+
+.flexcontainer {
+    display: flex;
+}
+
+main img {
+    width: 100%;
+}
+
+
+p {
+    font-family: raleway;
+}
+
+.wrapper {
+    width: 80%;
+    margin: auto;
+
+}
+
+
+.skrivebord {
+    width: 30%;
+    margin: auto;
+}
+
+
+.laesepause {
+    width: 30%;
+    margin: auto;
+    transform: rotate(90deg);
+   
+}
+
+
+.musikarbejd {
+    width: 20%;
+    margin: auto;
+}
+
+footer {
+    text-align: center;
+    color: black;
+    font-family: "Georgia";
+    font-size: 12px;
+    border-bottom: 3px solid RGB(20, 103, 137, 0.1);
+    border-top: 3px solid RGB(20, 103, 137, 0.1);
+    margin-bottom: 10px;
+    padding-top: 10px;
+    max-width: 100%;
+}
